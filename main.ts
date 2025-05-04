@@ -1,2 +1,4 @@
- const test: string = 'Hello from neovim';
-console.log(test)
+function bar() {
+  console.log("Coscu")
+}
+bar();

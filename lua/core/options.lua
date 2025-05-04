@@ -6,7 +6,7 @@ vim.o.shiftwidth = 2 -- Number of spaces inserted for indentation
 -- UI configuration
 vim.wo.number = true -- Show line numbers
 vim.o.relativenumber = true -- Show relative line numbers
-vim.wo.signcolumn = 'number' -- Merge sign column with number column
+vim.wo.signcolumn = 'yes:1' -- Merge sign column with number column
 vim.o.cursorline = false -- Disable cursor line highlight
 vim.o.scrolloff = 8 -- Minimum lines to keep above/below cursor
 vim.o.sidescrolloff = 8 -- Minimum columns to keep beside cursor

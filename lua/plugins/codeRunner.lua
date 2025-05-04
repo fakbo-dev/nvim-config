@@ -6,7 +6,7 @@ return {
         python = 'python3 -u',
         javascript = 'node',
         java = 'cd $dir && javac $fileName && java $fileNameWithoutExt',
-        typescript = 'cd $dir && ts-node --esm $fileName',
+        typescript = 'npx ts-node $fileName',
         --Alternative approach
         --typescript = 'npx ts-node --esm $fileName',
         --typescript = 'node --loader ts-node/esm $fileName',

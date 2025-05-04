@@ -31,4 +31,5 @@ require('lazy').setup {
   require 'plugins.neocord',
   require 'plugins.themes',
   require 'plugins.transparency',
+  --require 'plugins.typescriptServer',
 }
