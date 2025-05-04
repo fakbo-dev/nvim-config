@@ -3,7 +3,6 @@ vim.o.expandtab = true -- Convert tabs to spaces
 vim.o.tabstop = 2 -- Insert 2 spaces for a tab
 vim.o.softtabstop = 2 -- Number of spaces that a tab counts for
 vim.o.shiftwidth = 2 -- Number of spaces inserted for indentation
-
 -- UI configuration
 vim.wo.number = true -- Show line numbers
 vim.o.relativenumber = true -- Show relative line numbers
