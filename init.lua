@@ -32,4 +32,5 @@ require('lazy').setup {
   require 'plugins.themes',
   require 'plugins.transparency',
   --require 'plugins.typescriptServer',
+  require 'plugins.mason-tempo',
 }
