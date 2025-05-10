@@ -1,4 +1,3 @@
-vim.deprecated = function() end
 require 'core.options'
 require 'core.keymaps'
 require 'core.snippets'
