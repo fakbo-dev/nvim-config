@@ -9,7 +9,7 @@ vim.wo.number = true -- Show line numbers
 vim.o.relativenumber = true -- Show relative line numbers
 vim.wo.signcolumn = 'yes:1' -- Merge sign column with number column
 vim.o.cursorline = false -- Disable cursor line highlight
-vim.o.scrolloff = 8 -- Minimum lines to keep above/below cursor
+vim.o.scrolloff = 10 -- Minimum lines to keep above/below cursor
 vim.o.sidescrolloff = 8 -- Minimum columns to keep beside cursor
 
 -- Window management
@@ -24,7 +24,14 @@ vim.api.nvim_set_hl(0, 'Pmenu', { bg = 'none' })
 vim.opt.termguicolors = true -- Enable true color support
 
 -- second Block of configuration
-vim.o.clipboard = 'unnamedplus'
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
+end)
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 300
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.confirm = true
 vim.o.wrap = false
 vim.o.linebreak = true
 vim.o.mouse = 'a'
