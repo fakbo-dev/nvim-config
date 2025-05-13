@@ -41,10 +41,10 @@ vim.keymap.set('i', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set('i', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 -- Buffers
-vim.keymap.set('n', '<Tab>', ':bnext<CR>', opts)
-vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', opts)
-vim.keymap.set('n', '<leader>x', ':bdelete!<CR>', opts) -- close buffer
-vim.keymap.set('n', '<leader>b', '<cmd> enew <CR>', opts) -- new buffer
+--vim.keymap.set('n', '<Tab>', ':bnext<CR>', opts)
+--vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>', opts)
+--vim.keymap.set('n', '<leader>x', ':bdelete!<CR>', opts) -- close buffer
+--vim.keymap.set('n', '<leader>b', '<cmd> enew <CR>', opts) -- new buffer
 
 -- Window management
 vim.keymap.set('n', '<leader>v', '<C-w>v', opts) -- split window vertically
