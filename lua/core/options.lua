@@ -1,5 +1,5 @@
 -- Editor settings
-vim.deprecated = function() end
+vim.deprecate = function() end
 vim.o.expandtab = true -- Convert tabs to spaces
 vim.o.tabstop = 2 -- Insert 2 spaces for a tab
 vim.o.softtabstop = 2 -- Number of spaces that a tab counts for
