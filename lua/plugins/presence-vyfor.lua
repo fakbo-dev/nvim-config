@@ -10,9 +10,9 @@ return {
       icon = nil,
     },
     display = {
-      theme = 'default',
-      flavor = 'dark',
-      swap_fields = false,
+      theme = 'atom',
+      flavor = 'accent',
+      swap_fields = true,
       swap_icons = false,
     },
     timestamp = {
@@ -22,9 +22,9 @@ return {
     },
     idle = {
       enabled = true,
-      timeout = 300000,
+      timeout = 3000000,
       show_status = true,
-      ignore_focus = true,
+      ignore_focus = false,
       unidle_on_focus = true,
       smart_idle = true,
       details = 'Idling',
@@ -78,13 +78,15 @@ return {
       end,
       dashboard = 'Home',
     },
-    buttons = nil,
-    -- buttons = {
-    --   {
-    --     label = 'View Repository',
-    --     url = function(opts) return opts.repo_url end,
-    --   },
-    -- },
+    --buttons = nil,
+    buttons = {
+      {
+        label = 'View Repository',
+        url = function(opts)
+          return opts.repo_url
+        end,
+      },
+    },
     assets = nil,
     variables = nil,
     hooks = {
