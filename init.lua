@@ -1,3 +1,4 @@
+vim.opt_local.conceallevel = 1
 require 'core.options'
 require 'core.keymaps'
 require 'core.snippets'
@@ -34,6 +35,7 @@ require('lazy').setup({
   --require 'plugins.typescriptServer',
   require 'plugins.mason-tempo',
   require 'plugins.presence-vyfor',
+  --require 'plugins.obsidian',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
