@@ -1,4 +1,5 @@
 -- Set leader key
+vim.keymap.set('i', 'jj', '<Esc>')
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 -- Disable the spacebar key's default behavior in Normal and Visual modes
