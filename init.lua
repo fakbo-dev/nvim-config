@@ -28,7 +28,7 @@ require('lazy').setup({
   require 'plugins.alpha',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
-  require 'plugins.codeRunner',
+  --require 'plugins.codeRunner',
   --require 'plugins.neocord',
   require 'plugins.themes',
   require 'plugins.transparency',
