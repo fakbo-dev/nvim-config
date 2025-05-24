@@ -18,14 +18,14 @@ return {
       workspaces = {
         {
           name = 'second_braind',
-          path = '~/vaults/second_brain',
+          path = '~/vaults/second_brain/second_braind',
         },
       },
       notes_subdir = 'inbox',
       new_notes_location = 'notes_subdir',
 
       completion = {
-        nvim_cmp = false,
+        nvim_cmp = true,
         min_chars = 0,
       },
       mappings = {
@@ -91,13 +91,6 @@ return {
       end, { desc = 'Insert Template' })
 
       -- Obsidian specific live grep folders
-      local inbox_dir = '~/Documents/Obsidian/Main/inbox'
-      local notes_dir = '~/Documents/Obsidian/Main/notes'
-      local uncategorized_dir = '~/Documents/Obsidian/Main/uncategorized'
-
-      vim.keymap.set('n', '<leader>sg', function()
-        require('telescope.builtin').live_grep { search_dirs = { inbox_dir, notes_dir, uncategorized_dir } }
-      end, { desc = '[S]earch by [G]rep (Obsidian)' })
     end,
   },
 }
