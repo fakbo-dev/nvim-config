@@ -35,7 +35,7 @@ require('lazy').setup({
   --require 'plugins.typescriptServer',
   require 'plugins.mason-tempo',
   require 'plugins.presence-vyfor',
-  --require 'plugins.obsidian',
+  require 'plugins.obsidian',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
