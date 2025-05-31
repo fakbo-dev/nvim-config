@@ -132,6 +132,12 @@ return {
           noremap = true,
           nowait = true,
         },
+        float = {
+          relative = 'editor',
+          width = 1,
+          height = 1,
+          border = 'none',
+        },
         mappings = {
           ['<space>'] = {
             'toggle_node',
@@ -309,7 +315,14 @@ return {
     }
 
     vim.cmd [[nnoremap \ :Neotree reveal<cr>]]
-    vim.keymap.set('n', '<leader>e', ':Neotree toggle position=right<CR>', { noremap = true, silent = true }) -- focus file explorer
+    --vim.keymap.set('n', '<leader>e', ':Neotree toggle position=right<CR>', { noremap = true, silent = true }) -- focus file explorer
     vim.keymap.set('n', '<leader>ngs', ':Neotree float git_status<CR>', { noremap = true, silent = true }) -- open git status window
+    vim.keymap.set('n', '<leader>e', function()
+      require('neo-tree.command').execute {
+        toggle = true,
+        position = 'float',
+        source = 'filesystem',
+      }
+    end, { desc = 'NeoTree (Full Screen)', noremap = true, silent = true })
   end,
 }
