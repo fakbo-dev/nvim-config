@@ -48,7 +48,7 @@ return {
   config = function(_, opts)
     require('obsidian').setup(opts)
 
-    -- SAFE KEY MAPPINGS USING COMMANDS ONLY
+    -- Note operations
     vim.keymap.set('n', '<leader>nn', function()
       local title = vim.fn.input 'Note title: '
       if title and title ~= '' then
@@ -59,6 +59,20 @@ return {
     vim.keymap.set('n', '<leader>nf', function()
       vim.cmd 'ObsidianSearch'
     end, { desc = 'Search notes' })
+
+    -- NEW: Search by tag
+    vim.keymap.set('n', '<leader>nt', function()
+      local tag = vim.fn.input 'Tag: '
+      if tag and tag ~= '' then
+        -- Remove '#' if user included it
+        tag = tag:gsub('^#', '')
+        vim.cmd('ObsidianSearch #' .. tag)
+      end
+    end, { desc = 'Search by tag' })
+
+    vim.keymap.set('n', '<leader>nta', function()
+      vim.cmd 'ObsidianTags'
+    end, { desc = 'Browse all tags' })
 
     vim.keymap.set('n', '<leader>nt', function()
       vim.cmd 'ObsidianTemplate'
