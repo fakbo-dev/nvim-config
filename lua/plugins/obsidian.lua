@@ -3,8 +3,8 @@ return {
   version = '*',
   lazy = true,
   event = {
-    'BufReadPre ' .. vim.fn.expand '~' .. '/Documents/Programming/**/*.md',
-    'BufNewFile ' .. vim.fn.expand '~' .. '/Documents/Programming/**/*.md',
+    'BufReadPre ' .. vim.fn.expand '~' .. '/Documents/Second_Brain/**/*.md',
+    'BufNewFile ' .. vim.fn.expand '~' .. '/Documents/Second_Brain/**/*.md',
   },
   ft = 'markdown',
   dependencies = {
@@ -13,8 +13,8 @@ return {
   opts = {
     workspaces = {
       {
-        name = 'Programming',
-        path = vim.fn.expand '~/Documents/Programming',
+        name = 'Second_Brain',
+        path = vim.fn.expand '~/Documents/Second_Brain',
       },
     },
     disable_frontmatter = true,
@@ -119,11 +119,11 @@ return {
     end, { desc = 'Insert mermaid diagram' })
 
     vim.keymap.set('n', '<leader>nlg', function()
-      vim.cmd('ObsidianTemplate ' .. vim.fn.expand '~/Documents/Programming/Templates/learning.template.md')
+      vim.cmd('ObsidianTemplate ' .. vim.fn.expand '~/Documents/Second_Brain/Templates/learning.template.md')
     end, { desc = 'Insert learning template' })
 
     vim.keymap.set('n', '<leader>nsg', function()
-      vim.cmd('ObsidianTemplate ' .. vim.fn.expand '~/Documents/Programming/Templates/snippet.template.md')
+      vim.cmd('ObsidianTemplate ' .. vim.fn.expand '~/Documents/Second_Brain/Templates/snippet.template.md')
     end, { desc = 'Insert snippet template' })
 
     -- Insert resource link
@@ -139,7 +139,7 @@ return {
 
     -- Set default workspace on startup
     vim.defer_fn(function()
-      vim.cmd 'ObsidianWorkspace Programming'
+      vim.cmd 'ObsidianWorkspace Second_Brain'
     end, 1000)
   end,
 }
