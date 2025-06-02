@@ -4,10 +4,13 @@ return {
   branch = '0.1.x',
   dependencies = {
     'nvim-lua/plenary.nvim',
-    { -- If encountering errors, see telescope-fzf-native README for installation instructions
+    { -- If encountering errors, see telescope-fzf-native
+      --README for installation instructions
+
       'nvim-telescope/telescope-fzf-native.nvim',
 
-      -- `build` is used to run some command when the plugin is installed/updated.
+      -- `build` is used to run some command when the plugin is
+      -- installed/updated.
       -- This is only run then, not every time Neovim starts up.
       build = 'make',
 
@@ -50,10 +53,10 @@ return {
       defaults = {
         mappings = {
           i = {
-            ['<C-k>'] = require('telescope.actions').move_selection_previous, -- move to prev result
-            ['<C-j>'] = require('telescope.actions').move_selection_next, -- move to next result
-            ['<C-l>'] = require('telescope.actions').select_default, -- open file
-            ['<C-p>'] = require('telescope.actions.layout').toggle_preview, -- open file
+            ['<C-k>'] = require('telescope.actions').move_selection_previous,
+            ['<C-j>'] = require('telescope.actions').move_selection_next,
+            ['<C-l>'] = require('telescope.actions').select_default,
+            ['<C-p>'] = require('telescope.actions.layout').toggle_preview,
           },
         },
         preview = {
