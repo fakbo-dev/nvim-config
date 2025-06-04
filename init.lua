@@ -31,7 +31,8 @@ require('lazy').setup({
   require 'plugins.completion',
   require 'plugins.no-ls',
   require 'plugins.gitsigns',
-  require 'plugins.alpha',
+  require 'plugins.startMenu',
+  --require 'plugins.alpha',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
   --require 'plugins.codeRunner',
@@ -46,10 +47,6 @@ require('lazy').setup({
   --require 'plugins.kanagawa',
 }, {
   ui = {
-    -- If you are using a Nerd Font: set icons
-    -- to an empty table which will use the
-    -- default lazy.nvim defined Nerd Font icons,
-    -- otherwise define a unicode icons table
     icons = vim.g.have_nerd_font and {} or {
       cmd = '⌘',
       config = '🛠',
