@@ -317,7 +317,7 @@ return {
       picker = {
         sources = {
           explorer = {
-          path = vim.fn.getcwd(),
+            path = vim.fn.getcwd(),
             auto_close = true,
             layout = {
               preset = 'vscode',
@@ -351,15 +351,6 @@ return {
                     shouldPlayAnimation = true
                   end,
                 }
-                shouldPlayAnimation = false
-              end,
-            },
-            {
-              icon = ' ',
-              key = 's',
-              desc = 'Restore Session',
-              action = function()
-                require('persistence').load { last = true }
                 shouldPlayAnimation = false
               end,
             },
