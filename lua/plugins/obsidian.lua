@@ -16,6 +16,10 @@ return {
         name = 'Second_Brain',
         path = vim.fn.expand '~/Documents/Second_Brain',
       },
+      {
+        name = 'work_proyects',
+        path = vim.fn.expand '~/Documents/work_proyects',
+      },
     },
     disable_frontmatter = true,
     note_id_func = function(title)
