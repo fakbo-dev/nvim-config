@@ -45,6 +45,7 @@ require('lazy').setup({
   require 'plugins.obsidian',
   require 'plugins.nvim-cpm',
   --require 'plugins.kanagawa',
+  require 'plugins.vim-be-good',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
