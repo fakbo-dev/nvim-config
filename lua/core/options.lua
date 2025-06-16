@@ -11,7 +11,7 @@ vim.wo.signcolumn = 'yes:1' -- Merge sign column with number column
 vim.o.cursorline = false -- Disable cursor line highlight
 vim.o.scrolloff = 10 -- Minimum lines to keep above/below cursor
 vim.o.sidescrolloff = 8 -- Minimum columns to keep beside cursor
-vim.opt.colorcolumn = '80'
+vim.opt.colorcolumn = '100'
 -- Window management
 vim.o.splitbelow = true -- New windows go below
 vim.o.splitright = true -- New windows go right
