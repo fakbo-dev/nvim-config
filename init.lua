@@ -37,14 +37,14 @@ require('lazy').setup({
   require 'plugins.misc',
   --require 'plugins.codeRunner',
   --require 'plugins.neocord',
-  require 'plugins.themes',
+  --require 'plugins.themes',
   require 'plugins.transparency',
   --require 'plugins.typescriptServer',
   require 'plugins.mason-tempo',
   require 'plugins.presence-vyfor',
   require 'plugins.obsidian',
   require 'plugins.nvim-cpm',
-  --require 'plugins.kanagawa',
+  require 'plugins.rosePine',
   require 'plugins.vim-be-good',
 }, {
   ui = {
