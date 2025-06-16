@@ -22,14 +22,14 @@ return {
       desc = 'harpoon quick menu',
     },
     {
-      '<C-h>',
+      '<C-t>',
       function()
         require('harpoon'):list():select(1)
       end,
       desc = 'harpoon to file 1',
     },
     {
-      '<C-t>',
+      '<C-h>',
       function()
         require('harpoon'):list():select(2)
       end,
@@ -43,7 +43,7 @@ return {
       desc = 'harpoon to file 3',
     },
     {
-      '<C-b>',
+      '<C-M>',
       function()
         require('harpoon'):list():select(4)
       end,
