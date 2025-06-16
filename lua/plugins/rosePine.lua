@@ -22,7 +22,6 @@ return {
         -- bold_vert_split = false,
         -- dim_inactive_windows = false,
         -- enable = {
-        --   terminal = true,
         -- },
       }
       vim.cmd.colorscheme 'rose-pine'
