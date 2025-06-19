@@ -10,9 +10,9 @@ return {
         -- "main" (default), "moon", or "dawn"
         -- Example for the default Rose Pine variant:
         variant = 'main',
-        --disable_background = true,
+        disable_background = true,
         -- Set transparency
-        --transparent_background = true, -- Rose Pine's option for transparency
+        transparent_background = true, -- Rose Pine's option for transparency
 
         -- You can add other Rose Pine options here if you want to customize it further
         -- Refer to the Rose Pine Neovim GitHub for all options:
