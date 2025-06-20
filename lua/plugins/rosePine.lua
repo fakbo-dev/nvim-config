@@ -9,7 +9,7 @@ return {
         -- You can choose one of the Rose Pine variants:
         -- "main" (default), "moon", or "dawn"
         -- Example for the default Rose Pine variant:
-        variant = 'main',
+        variant = 'moon',
         disable_background = true,
         -- Set transparency
         transparent_background = true, -- Rose Pine's option for transparency
