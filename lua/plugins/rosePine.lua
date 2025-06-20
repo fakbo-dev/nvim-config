@@ -23,6 +23,9 @@ return {
         -- dim_inactive_windows = false,
         -- enable = {
         -- },
+        styles = {
+          transparency = true,
+        },
       }
       vim.cmd.colorscheme 'rose-pine'
     end,
