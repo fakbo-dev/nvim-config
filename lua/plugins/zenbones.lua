@@ -9,7 +9,6 @@ return {
   -- you can set set configuration options here
   config = function()
     vim.g.zenbones_darken_comments = 45
-    -- Set this to 1 to make the background transparent
     vim.g.zenbones_transparent_background = 1
     vim.cmd.colorscheme 'kanagawabones'
   end,
