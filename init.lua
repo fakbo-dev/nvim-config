@@ -1,3 +1,4 @@
+vim.opt.termguicolors = true
 require 'core.options'
 require 'core.keymaps'
 require 'core.snippets'
@@ -49,6 +50,7 @@ require('lazy').setup({
   require 'plugins.harpoon',
   require 'plugins.leetcode',
   require 'plugins.img-clip',
+  --require 'plugins.zenbones',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
