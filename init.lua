@@ -20,11 +20,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  --require 'plugins.bufferline',
   require 'plugins.lualine',
   require 'plugins.neo-tree',
-  --require 'plugins.nord',
-  --require 'plugins.presence',
   require 'plugins.treesitter',
   require 'plugins.telescope',
   require 'plugins.lsp',
@@ -33,14 +30,9 @@ require('lazy').setup({
   require 'plugins.no-ls',
   require 'plugins.gitsigns',
   require 'plugins.startMenu',
-  --require 'plugins.alpha',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
-  --require 'plugins.codeRunner',
-  --require 'plugins.neocord',
-  --require 'plugins.themes',
   require 'plugins.transparency',
-  --require 'plugins.typescriptServer',
   require 'plugins.mason-tempo',
   require 'plugins.presence-vyfor',
   require 'plugins.obsidian',
@@ -49,8 +41,6 @@ require('lazy').setup({
   require 'plugins.vim-be-good',
   require 'plugins.harpoon',
   require 'plugins.leetcode',
-  require 'plugins.img-clip',
-  --require 'plugins.zenbones',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
