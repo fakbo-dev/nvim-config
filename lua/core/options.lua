@@ -59,3 +59,4 @@ vim.opt.shortmess:append 'c'
 vim.opt.iskeyword:append '-'
 vim.opt.formatoptions:remove { 'c', 'r', 'o' }
 vim.opt.runtimepath:remove '/usr/share/vim/vimfiles'
+vim.opt.guicursor = 'n-v-i-c:block-Cursor'
