@@ -6,7 +6,7 @@ return {
     log_level = vim.log.levels.OFF,
     editor = {
       client = 'neovim',
-      tooltip = 'The Superior Text Editor',
+      tooltip = "wally solo's",
       icon = nil,
     },
     display = {
@@ -34,14 +34,14 @@ return {
     },
     text = {
       default = nil,
-      workspace = function(opts)
-        return 'In ' .. opts.workspace
+      workspace = function()
+        return 'Working in some shi'
       end,
       viewing = function(opts)
         return 'Viewing ' .. opts.filename
       end,
-      editing = function(opts)
-        return 'Editing ' .. opts.filename
+      editing = function()
+        return 'Editing some stuff'
       end,
       file_browser = function(opts)
         return 'Browsing files in ' .. opts.name
