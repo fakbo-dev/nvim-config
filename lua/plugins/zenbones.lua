@@ -9,8 +9,7 @@ return {
     vim.cmd.colorscheme 'rosebones'
     vim.api.nvim_set_hl(0, 'Normal', { bg = '#000000' })
 
-    vim.api.nvim_set_hl(0, 'LineNr', { bg = '#000000' })
-    vim.api.nvim_set_hl(0, 'FoldColumn', { bg = '#000000' })
+    --vim.api.nvim_set_hl(0, 'LineNr', { bg = '#000000' })
     vim.api.nvim_set_hl(0, 'SignColumn', { bg = '#000000' })
     vim.api.nvim_set_hl(0, 'EndOfBuffer', { bg = '#000000' })
   end,
