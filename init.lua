@@ -42,6 +42,7 @@ require('lazy').setup({
   require 'plugins.harpoon',
   require 'plugins.leetcode',
   require 'plugins.ts-autotag',
+  --require 'plugins.zenbones',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
