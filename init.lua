@@ -37,12 +37,12 @@ require('lazy').setup({
   require 'plugins.presence-vyfor',
   require 'plugins.obsidian',
   require 'plugins.nvim-cpm',
-  require 'plugins.rosePine',
+  --require 'plugins.rosePine',
   require 'plugins.vim-be-good',
   require 'plugins.harpoon',
   require 'plugins.leetcode',
   require 'plugins.ts-autotag',
-  --require 'plugins.zenbones',
+  require 'plugins.vague',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
