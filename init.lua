@@ -32,7 +32,7 @@ require('lazy').setup({
   require 'plugins.startMenu',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
-  require 'plugins.transparency',
+  --require 'plugins.transparency',
   require 'plugins.mason-tempo',
   require 'plugins.presence-vyfor',
   require 'plugins.obsidian',
@@ -43,7 +43,6 @@ require('lazy').setup({
   require 'plugins.leetcode',
   require 'plugins.ts-autotag',
   require 'plugins.vague',
-  --require 'plugins.kanagawa',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
