@@ -1,20 +1,12 @@
 return {
   {
     'X3eRo0/dired.nvim',
-    -- 'cmd' makes sure the plugin is loaded only when the :Dired command is used,
-    -- which helps with faster Neovim startup.
     cmd = { 'Dired' },
-    -- 'dependencies' ensures that nui.nvim (a crucial dependency for dired.nvim's UI)
-    -- is loaded before dired.nvim is configured.
     dependencies = {
       'MunifTanjim/nui.nvim',
-      -- OPTIONAL: If you want file icons (like those seen in tree-based file explorers),
-      -- uncomment the line below and ensure you have a Nerd Font installed in your terminal.
-      -- 'nvim-tree/nvim-web-devicons',
     },
     config = function()
       require('dired').setup {
-        -- Basic configuration options for dired.nvim
         path_separator = '/', -- Use '/' as the path separator (standard for Unix-like systems)
         show_banner = false, -- Hide the dired.nvim banner at the top
         show_icons = false, -- Set to true if you've installed nvim-web-devicons and a Nerd Font
@@ -35,7 +27,7 @@ return {
           local opts = { noremap = true, silent = true, buffer = true }
 
           -- Navigation and Basic Actions
-          vim.keymap.set('n', '<CR>', ':DiredGo<CR>', opts) -- Enter directory or open file
+          vim.keymap.set('n', '<CR>', ':DiredEnter<CR>', opts) -- Enter directory or open file
           vim.keymap.set('n', '-', ':DiredGoUp<CR>', opts) -- Go to parent directory
           vim.keymap.set('n', 'q', ':q<CR>', opts) -- Quit dired buffer
 
