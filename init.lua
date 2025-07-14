@@ -43,6 +43,7 @@ require('lazy').setup({
   require 'plugins.leetcode',
   require 'plugins.ts-autotag',
   require 'plugins.vague',
+  --require 'plugins.dired',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
