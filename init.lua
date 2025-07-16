@@ -21,7 +21,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   require 'plugins.lualine',
-  --require 'plugins.neo-tree',
   require 'plugins.treesitter',
   require 'plugins.telescope',
   require 'plugins.lsp',
@@ -32,18 +31,15 @@ require('lazy').setup({
   require 'plugins.startMenu',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
-  --require 'plugins.transparency',
   require 'plugins.mason-tempo',
   require 'plugins.presence-vyfor',
   require 'plugins.obsidian',
   require 'plugins.nvim-cpm',
-  --require 'plugins.rosePine',
   require 'plugins.vim-be-good',
   require 'plugins.harpoon',
   require 'plugins.leetcode',
   require 'plugins.ts-autotag',
   require 'plugins.vague',
-  --require 'plugins.dired',
   require 'plugins.dirbuf',
 }, {
   ui = {
