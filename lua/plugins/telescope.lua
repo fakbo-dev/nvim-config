@@ -62,7 +62,7 @@ return {
         preview = {
           hide_on_startup = true,
         },
-        initial_mode = 'normal',
+        --initial_mode = 'normal',
       },
       pickers = {
         find_files = {
