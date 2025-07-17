@@ -1,9 +1,8 @@
 -- lua/plugins/feline.lua
 return {
   'famiu/feline.nvim',
-  event = 'VeryLazy', -- Load feline very late
+  event = 'VeryLazy',
   config = function()
-    -- !!! ADD THIS LINE !!!
     local feline = require 'feline'
 
     local one_monokai = {
@@ -31,7 +30,6 @@ return {
       COMMAND = 'aqua',
     }
 
-    -- ... (rest of your 'c' table, left, middle, right, and components definitions remain the same) ...
     local c = {
       vim_mode = {
         provider = {
@@ -41,7 +39,6 @@ return {
           },
         },
         hl = function()
-          -- Ensure feline.providers.vi_mode is also required locally or accessed correctly
           return {
             fg = require('feline.providers.vi_mode').get_mode_color(),
             bg = 'darkblue',
@@ -96,7 +93,7 @@ return {
         provider = {
           name = 'file_info',
           opts = {
-            type = 'relative-short',
+            type = 'relative-long',
           },
         },
         hl = {
@@ -185,7 +182,7 @@ return {
       scroll_bar = {
         provider = 'scroll_bar',
         hl = {
-          fg = 'yellow',
+          fg = 'white',
           style = 'bold',
         },
       },
