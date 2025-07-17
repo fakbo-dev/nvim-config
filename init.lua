@@ -20,7 +20,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  require 'plugins.lualine',
+  --require 'plugins.lualine',
   require 'plugins.treesitter',
   require 'plugins.telescope',
   require 'plugins.lsp',
@@ -41,6 +41,7 @@ require('lazy').setup({
   require 'plugins.ts-autotag',
   require 'plugins.vague',
   require 'plugins.dirbuf',
+  require 'plugins.feline',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
