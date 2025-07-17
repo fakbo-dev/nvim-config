@@ -35,7 +35,7 @@ return {
         provider = {
           name = 'vi_mode',
           opts = {
-            show_mode_name = false,
+            show_mode_name = true,
           },
         },
         hl = function()
