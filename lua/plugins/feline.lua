@@ -35,7 +35,7 @@ return {
         provider = {
           name = 'vi_mode',
           opts = {
-            show_mode_name = true,
+            show_mode_name = false,
           },
         },
         hl = function()
@@ -179,13 +179,6 @@ return {
         left_sep = 'block',
         right_sep = 'block',
       },
-      scroll_bar = {
-        provider = 'scroll_bar',
-        hl = {
-          fg = 'white',
-          style = 'bold',
-        },
-      },
     }
 
     local left = {
@@ -227,7 +220,6 @@ return {
       },
     }
 
-    -- This is line 231 (or near it, depending on exact formatting)
     feline.setup {
       components = components,
       theme = one_monokai,
