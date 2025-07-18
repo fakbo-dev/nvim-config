@@ -93,7 +93,7 @@ return {
         provider = {
           name = 'file_info',
           opts = {
-            type = 'relative-long',
+            type = 'base-only',
           },
         },
         hl = {
