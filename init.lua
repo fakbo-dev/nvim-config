@@ -28,7 +28,7 @@ require('lazy').setup({
   require 'plugins.completion',
   require 'plugins.no-ls',
   require 'plugins.gitsigns',
-  require 'plugins.startMenu',
+  --require 'plugins.startMenu',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
   require 'plugins.mason-tempo',
@@ -42,6 +42,7 @@ require('lazy').setup({
   require 'plugins.vague',
   require 'plugins.dirbuf',
   require 'plugins.feline',
+  require 'plugins.newstart',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
