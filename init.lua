@@ -20,7 +20,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  --require 'plugins.lualine',
   require 'plugins.treesitter',
   require 'plugins.telescope',
   require 'plugins.lsp',
@@ -28,7 +27,6 @@ require('lazy').setup({
   require 'plugins.completion',
   require 'plugins.no-ls',
   require 'plugins.gitsigns',
-  --require 'plugins.startMenu',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
   require 'plugins.mason-tempo',

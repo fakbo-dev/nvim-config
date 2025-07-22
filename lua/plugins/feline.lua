@@ -1,4 +1,3 @@
--- lua/plugins/feline.lua
 return {
   'famiu/feline.nvim',
   event = 'VeryLazy',
