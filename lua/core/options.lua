@@ -11,7 +11,7 @@ vim.wo.signcolumn = 'yes:1'
 vim.o.cursorline = false
 vim.o.scrolloff = 10
 vim.o.sidescrolloff = 8
-vim.opt.colorcolumn = '100'
+vim.opt.colorcolumn = '120'
 vim.o.splitbelow = true
 vim.o.splitright = true
 
