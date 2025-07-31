@@ -1,14 +1,8 @@
--- Custom code snippets for different purposes
+vim.hl.priorities.semantic_tokens = 95
 
--- Prevent LSP from overwriting treesitter color settings
--- https://github.com/NvChad/NvChad/issues/1907
-vim.hl.priorities.semantic_tokens = 95 -- Or any number lower than 100, treesitter's priority level
-
--- Appearance of diagnostics
 vim.diagnostic.config {
   virtual_text = {
     prefix = '●',
-    -- Add a custom format function to show error codes
     format = function(diagnostic)
       local code = diagnostic.code and string.format('[%s]', diagnostic.code) or ''
       return string.format('%s %s', code, diagnostic.message)
@@ -17,18 +11,16 @@ vim.diagnostic.config {
   underline = false,
   update_in_insert = true,
   float = {
-    source = 'if_many', -- Or "if_many"
+    source = 'if_many',
   },
   jump = {
     float = true,
   },
-  -- Make diagnostic background transparent
   on_ready = function()
     vim.cmd 'highlight DiagnosticVirtualText guibg=NONE'
   end,
 }
 
--- Highlight on yank
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()

@@ -1,14 +1,11 @@
 return {
   'vague2k/vague.nvim',
   config = function()
-    -- NOTE: you do not need to call setup if you don't want to.
     require('vague').setup {
-      transparent = true, -- don't set background
-      -- disable bold/italic globally in `style`
+      transparent = true,
       bold = true,
       italic = true,
       style = {
-        -- "none" is the same thing as default. But "italic" and "bold" are also valid options
         boolean = 'bold',
         number = 'none',
         float = 'none',
@@ -21,21 +18,17 @@ return {
         strings = 'italic',
         variables = 'none',
 
-        -- keywords
         keywords = 'none',
         keyword_return = 'italic',
         keywords_loop = 'none',
         keywords_label = 'none',
         keywords_exception = 'none',
 
-        -- builtin
         builtin_constants = 'bold',
         builtin_functions = 'none',
         builtin_types = 'bold',
         builtin_variables = 'none',
       },
-      -- plugin styles where applicable
-      -- make an issue/pr if you'd like to see more styling options!
       plugins = {
         cmp = {
           match = 'bold',
@@ -60,10 +53,8 @@ return {
         },
       },
 
-      -- Override highlights or add new highlights
       on_highlights = function(highlights, colors) end,
 
-      -- Override colors
       colors = {
         bg = '#141415',
         fg = '#cdcdcd',

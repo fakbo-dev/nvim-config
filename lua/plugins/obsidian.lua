@@ -52,7 +52,6 @@ return {
   config = function(_, opts)
     require('obsidian').setup(opts)
 
-    -- Note operations
     vim.keymap.set('n', '<leader>nn', function()
       local title = vim.fn.input 'Note title: '
       if title and title ~= '' then
@@ -64,11 +63,9 @@ return {
       vim.cmd 'ObsidianSearch'
     end, { desc = 'Search notes' })
 
-    -- NEW: Search by tag
     vim.keymap.set('n', '<leader>nt', function()
       local tag = vim.fn.input 'Tag: '
       if tag and tag ~= '' then
-        -- Remove '#' if user included it
         tag = tag:gsub('^#', '')
         vim.cmd('ObsidianSearch #' .. tag)
       end
@@ -106,12 +103,10 @@ return {
       vim.cmd 'ObsidianWorkspace'
     end, { desc = 'Switch workspace' })
 
-    -- Toggle checkbox
     vim.keymap.set('n', '<leader>tt', function()
       vim.cmd 'ObsidianToggleCheckbox'
     end, { desc = 'Toggle checkbox' })
 
-    -- Content creation helpers
     vim.keymap.set('n', '<leader>nc', function()
       local ft = vim.bo.filetype
       vim.api.nvim_put({ '```' .. ft, '', '```' }, 'c', true, true)
@@ -130,18 +125,15 @@ return {
       vim.cmd('ObsidianTemplate ' .. vim.fn.expand '~/Documents/Second_Brain/Templates/snippet.template.md')
     end, { desc = 'Insert snippet template' })
 
-    -- Insert resource link
     vim.keymap.set('n', '<leader>nlr', function()
       local resource_label = 'Resource ' .. os.date '%Y-%m'
       vim.cmd('normal! a[[' .. resource_label .. ']]')
     end, { desc = 'Insert resource link' })
 
-    -- Search snippets
     vim.keymap.set('n', '<leader>nfs', function()
       vim.cmd 'ObsidianSearch #snippet'
     end, { desc = 'Search snippets' })
 
-    -- Set default workspace on startup
     vim.defer_fn(function()
       vim.cmd 'ObsidianWorkspace Second_Brain'
     end, 1000)

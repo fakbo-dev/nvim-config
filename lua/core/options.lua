@@ -1,29 +1,26 @@
 -- Editor settings
 vim.deprecate = function() end
-vim.o.expandtab = true -- Convert tabs to spaces
-vim.o.tabstop = 2 -- Insert 2 spaces for a tab
-vim.o.softtabstop = 2 -- Number of spaces that a tab counts for
-vim.o.shiftwidth = 2 -- Number of spaces inserted for indentation
--- UI configuration
-vim.wo.number = true -- Show line numbers
-vim.o.relativenumber = true -- Show relative line numbers
-vim.wo.signcolumn = 'yes:1' -- Merge sign column with number column
-vim.o.cursorline = false -- Disable cursor line highlight
-vim.o.scrolloff = 10 -- Minimum lines to keep above/below cursor
-vim.o.sidescrolloff = 8 -- Minimum columns to keep beside cursor
-vim.opt.colorcolumn = '100'
--- Window management
-vim.o.splitbelow = true -- New windows go below
-vim.o.splitright = true -- New windows go right
+vim.o.expandtab = true
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
 
--- Visual enhancements
+vim.wo.number = true
+vim.o.relativenumber = true
+vim.wo.signcolumn = 'yes:1'
+vim.o.cursorline = false
+vim.o.scrolloff = 10
+vim.o.sidescrolloff = 8
+vim.opt.colorcolumn = '100'
+vim.o.splitbelow = true
+vim.o.splitright = true
+
 vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'Pmenu', { bg = 'none' })
-vim.opt.termguicolors = true -- Enable true color support
+vim.opt.termguicolors = true
 
--- second Block of configuration
 vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
@@ -44,7 +41,7 @@ vim.o.whichwrap = 'bs<>[]hl'
 vim.o.numberwidth = 4
 vim.o.swapfile = false
 vim.o.smartindent = true
-vim.o.showtabline = 0 --change to 2 if want bufferline
+vim.o.showtabline = 0
 vim.o.backspace = 'indent,eol,start'
 vim.o.pumheight = 10
 vim.o.conceallevel = 1

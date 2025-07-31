@@ -2,7 +2,6 @@ return {
   'kawre/leetcode.nvim',
   dependencies = {
     'nvim-telescope/telescope.nvim',
-    -- "ibhagwan/fzf-lua",
     'nvim-lua/plenary.nvim',
     'MunifTanjim/nui.nvim',
   },
@@ -14,7 +13,7 @@ return {
     ---@type lc.lang
     lang = 'javascript',
 
-    cn = { -- leetcode.cn
+    cn = {
       enabled = false, ---@type boolean
       translator = true, ---@type boolean
       translate_problems = true, ---@type boolean
@@ -97,6 +96,6 @@ return {
     theme = {},
 
     ---@type boolean
-    image_support = false, -- configuration goes here
+    image_support = false,
   },
 }
