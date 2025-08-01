@@ -5,7 +5,8 @@ require 'core.snippets'
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
-  local out = vim.fn.system {
+  local out = vim.fn.system
+  {
     'git',
     'clone',
     '--filter=blob:none',
@@ -25,7 +26,7 @@ require('lazy').setup({
   require 'plugins.lsp',
   require 'plugins.autocompletion',
   require 'plugins.completion',
-  require 'plugins.no-ls',
+  --require 'plugins.no-ls',
   require 'plugins.gitsigns',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
