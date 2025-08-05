@@ -42,7 +42,8 @@ require('lazy').setup({
   require 'plugins.dirbuf',
   require 'plugins.feline',
   require 'plugins.newstart',
-  -- require 'plugins.oil'
+  -- require 'plugins.oil',
+  require 'plugins.lazygit'
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
