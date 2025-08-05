@@ -6,7 +6,7 @@ return {
     log_level = vim.log.levels.OFF,
     editor = {
       client = 'neovim',
-      tooltip = "wally solo's",
+      tooltip = "the greatest IDLE",
       icon = nil,
     },
     display = {
