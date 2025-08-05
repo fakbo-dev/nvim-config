@@ -29,7 +29,7 @@ return {
       desc = 'harpoon to file 1',
     },
     {
-      '<C-h>',
+      '<C-y>',
       function()
         require('harpoon'):list():select(2)
       end,

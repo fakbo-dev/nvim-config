@@ -49,10 +49,18 @@ vim.keymap.set('v', '>', '>gv', opts)
 
 vim.keymap.set('v', 'p', '"_dP', opts)
 
-vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+-- vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+-- vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>e', ':Dirbuf<CR>')
 vim.keymap.set('n', 'q', ':DirbufQuit<CR>')
 vim.keymap.set('n', 'mm', 'gcc', { desc = 'Toggle comment', remap = true })
 vim.keymap.set('v', 'mm', 'gc', { desc = 'Toggle comment', remap = true })
+
+vim.keymap.set('n',']t', function()
+	require('todo-comments').jump_next()
+end, {desc = "Next todo comment"})
+
+vim.keymap.set('n','[t', function()
+	require('todo-comments').jump_prev()
+end, {desc = "Prev todo comment"})

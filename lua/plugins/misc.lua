@@ -5,6 +5,7 @@ return {
   {
     'tpope/vim-sleuth',
   },
+  -- NOTE: check this plugin
   {
     'tpope/vim-fugitive',
   },
