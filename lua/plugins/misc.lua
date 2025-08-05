@@ -9,9 +9,11 @@ return {
   {
     'tpope/vim-fugitive',
   },
+  -- NOTE: check the single use
   {
     'tpope/vim-rhubarb',
   },
+  -- WARN: i think i dont need this one
   {
     'folke/which-key.nvim',
   },
