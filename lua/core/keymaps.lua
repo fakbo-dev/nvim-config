@@ -57,6 +57,8 @@ vim.keymap.set('n', 'q', ':DirbufQuit<CR>')
 vim.keymap.set('n', 'mm', 'gcc', { desc = 'Toggle comment', remap = true })
 vim.keymap.set('v', 'mm', 'gc', { desc = 'Toggle comment', remap = true })
 
+-- HACK: is this really necesary?
+
 vim.keymap.set('n',']t', function()
 	require('todo-comments').jump_next()
 end, {desc = "Next todo comment"})

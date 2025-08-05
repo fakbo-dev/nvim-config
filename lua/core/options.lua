@@ -4,7 +4,7 @@ vim.o.expandtab = true
 vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
--- BUG: this break in windows need to see why
+-- BUG: this break telescope in windows need to see why
 vim.o.winborder = "rounded"
 
 vim.wo.number = true
