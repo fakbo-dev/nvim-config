@@ -37,10 +37,6 @@ vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', opts)
 vim.keymap.set('n', '<A-h>', '<C-w>h')
 vim.keymap.set('n', '<A-l>', '<C-w>l')
 
-vim.keymap.set('n', '<leader>to', ':taxnew<CR>', opts) -- open new tab
-vim.keymap.set('n', '<leader>tx', ':tabclose<CR>', opts) -- close current tab
-vim.keymap.set('n', '<leader>tn', ':tabn<CR>', opts) --  go to next tab
-vim.keymap.set('n', '<leader>tp', ':tabp<CR>', opts) --  go to previous tab
 
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', opts)
 
