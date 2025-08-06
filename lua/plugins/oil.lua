@@ -1,3 +1,4 @@
+-- NOTE: change the default keymaps
 return {
   'stevearc/oil.nvim',
   ---@module 'oil'

@@ -7,11 +7,11 @@ return {
 
     vim.api.nvim_create_autocmd('FileType', {
       pattern = 'dirbuf',
-      callback = function()
-        vim.keymap.set('n', '<C-s>', function()
-          vim.cmd 'DirbufSync -confirm'
-        end, { buffer = true, desc = 'Dirbuf: Sync changes with confirmation' })
-      end,
+      -- callback = function()
+      --   vim.keymap.set('n', '<C-s>', function()
+      --     vim.cmd 'DirbufSync -confirm'
+      --   end, { buffer = true, desc = 'Dirbuf: Sync changes with confirmation' })
+      -- end,
     })
   end,
 }
