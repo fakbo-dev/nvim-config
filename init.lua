@@ -39,10 +39,10 @@ require('lazy').setup({
   require 'plugins.leetcode',
   require 'plugins.ts-autotag',
   require 'plugins.vague',
-  require 'plugins.dirbuf',
+  -- require 'plugins.dirbuf',
   require 'plugins.feline',
   require 'plugins.newstart',
-  -- require 'plugins.oil',
+  require 'plugins.oil',
   require 'plugins.lazygit'
 }, {
   ui = {

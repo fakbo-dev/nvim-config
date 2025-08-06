@@ -1,3 +1,4 @@
+-- HACK: i mean it works
 return {
   'kawre/leetcode.nvim',
   dependencies = {

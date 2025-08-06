@@ -1,3 +1,4 @@
+-- WARNING: a lot of trash keymaps need a check
 return {
   'epwalsh/obsidian.nvim',
   version = '*',
@@ -52,12 +53,6 @@ return {
   config = function(_, opts)
     require('obsidian').setup(opts)
 
-    vim.keymap.set('n', '<leader>nn', function()
-      local title = vim.fn.input 'Note title: '
-      if title and title ~= '' then
-        vim.cmd('ObsidianNew ' .. vim.fn.fnameescape(title))
-      end
-    end, { desc = 'New note' })
 
     vim.keymap.set('n', '<leader>nf', function()
       vim.cmd 'ObsidianSearch'

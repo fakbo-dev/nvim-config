@@ -1,3 +1,4 @@
+-- TODO: fix the status bar
 return {
 	"famiu/feline.nvim",
 	event = "VeryLazy",

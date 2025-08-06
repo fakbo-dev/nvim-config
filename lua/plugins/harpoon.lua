@@ -1,3 +1,4 @@
+-- PERF: dont touch nothing is perfect
 return {
   'theprimeagen/harpoon',
   branch = 'harpoon2',
