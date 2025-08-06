@@ -31,12 +31,14 @@ return {
       'tsx',
       'css',
       'html',
+      'rust'
     },
     auto_install = true,
     highlight = {
       enable = true,
       additional_vim_regex_highlighting = { 'ruby' },
     },
-    indent = { enable = true, disable = { 'ruby' } },
+    -- NOTE: i change enable to false for try my new indentation method
+    indent = { enable = false, disable = { 'ruby' } },
   },
 }

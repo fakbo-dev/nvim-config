@@ -21,6 +21,7 @@ return {
   config = function()
     require('telescope').setup {
       defaults = {
+        -- NOTE: this is really useful!
         mappings = {
           i = {
             ['<C-k>'] = require('telescope.actions').move_selection_previous,
@@ -32,7 +33,6 @@ return {
         preview = {
           hide_on_startup = true,
         },
-        --initial_mode = 'normal',
       },
       pickers = {
         find_files = {

@@ -6,12 +6,12 @@ return {
     log_level = vim.log.levels.OFF,
     editor = {
       client = 'neovim',
-      tooltip = "the greatest IDLE",
+      tooltip = "praise the fool 🎭",
       icon = nil,
     },
     display = {
       theme = 'atom',
-      flavor = 'accent',
+      flavor = 'dark',
       swap_fields = true,
       swap_icons = false,
     },

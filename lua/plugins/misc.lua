@@ -1,21 +1,13 @@
 return {
+  -- HACK: maybe is iseful?
   {
     'christoomey/vim-tmux-navigator',
   },
   {
     'tpope/vim-sleuth',
   },
-  -- NOTE: check this plugin
-  {
-    'tpope/vim-fugitive',
-  },
-  -- NOTE: check the single use
   {
     'tpope/vim-rhubarb',
-  },
-  -- WARN: i think i dont need this one
-  {
-    'folke/which-key.nvim',
   },
   {
     'windwp/nvim-autopairs',
@@ -24,11 +16,27 @@ return {
     opts = {},
   },
   {
-    -- NOTE: This is useful! check it later
     'folke/todo-comments.nvim',
-    event = 'VimEnter',
     dependencies = { 'nvim-lua/plenary.nvim' },
-    opts = { signs = true },
+    opts = {
+      signs = true,
+    TODO = { icon = " ", color = "info" },
+    HACK = { icon = " ", color = "warning" },
+    WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
+    PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
+    NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
+    TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
+    colors = {
+        error = { "DiagnosticError", "ErrorMsg", "#DC2626" },
+        warning = {"#FBBF24" },
+        WARN = {"#FFA500"},
+        info = {"#2563EB" },
+        hint = { "#10B981"},
+        default = {"#7C3AED" },
+        test = { "#FF00FF" }
+        },
+    },
+
   },
   {
     'norcalli/nvim-colorizer.lua',
