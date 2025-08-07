@@ -1,4 +1,3 @@
--- PERF: perfect theme dont touch
 return {
   'vague2k/vague.nvim',
   config = function()

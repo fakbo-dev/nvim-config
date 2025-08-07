@@ -1,5 +1,4 @@
 return {
-  -- HACK: maybe is iseful?
   {
     'christoomey/vim-tmux-navigator',
   },

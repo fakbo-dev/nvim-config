@@ -1,3 +1,4 @@
+-- TODO: see the opts for the plugin and see if can oppen in close tree?
 return {
   "folke/trouble.nvim",
   opts =
