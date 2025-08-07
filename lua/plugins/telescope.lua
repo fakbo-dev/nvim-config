@@ -40,6 +40,8 @@ return {
         },
       },
     }
+    -- TODO: adding and see all the builtin a can use (implement the telesope)
+    -- for git files
     local builtin = require 'telescope.builtin'
     vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
     vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
