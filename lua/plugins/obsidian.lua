@@ -1,4 +1,3 @@
--- WARNING: a lot of trash keymaps need a check
 return {
   'epwalsh/obsidian.nvim',
   version = '*',
@@ -53,81 +52,39 @@ return {
   config = function(_, opts)
     require('obsidian').setup(opts)
 
-
     vim.keymap.set('n', '<leader>nf', function()
       vim.cmd 'ObsidianSearch'
-    end, { desc = 'Search notes' })
-
-    vim.keymap.set('n', '<leader>nt', function()
-      local tag = vim.fn.input 'Tag: '
-      if tag and tag ~= '' then
-        tag = tag:gsub('^#', '')
-        vim.cmd('ObsidianSearch #' .. tag)
-      end
-    end, { desc = 'Search by tag' })
+    end, { desc = 'obsidian: Search notes by grep' })
 
     vim.keymap.set('n', '<leader>nta', function()
       vim.cmd 'ObsidianTags'
-    end, { desc = 'Browse all tags' })
+    end, { desc = 'obsidian: Browse all tags' })
 
     vim.keymap.set('n', '<leader>nt', function()
       vim.cmd 'ObsidianTemplate'
-    end, { desc = 'Insert template' })
+    end, { desc = 'obsidian: Insert template' })
 
     vim.keymap.set('n', '<leader>nl', function()
       vim.cmd 'ObsidianFollowLink'
-    end, { desc = 'Follow link' })
+    end, { desc = 'obsidian: Follow link' })
 
     vim.keymap.set('n', '<leader>nb', function()
       vim.cmd 'ObsidianBacklinks'
-    end, { desc = 'Show backlinks' })
+    end, { desc = 'obsidian: Show backlinks' })
 
     vim.keymap.set('n', '<leader>ns', function()
       vim.cmd 'ObsidianQuickSwitch'
-    end, { desc = 'Quick switch' })
+    end, { desc = 'obsidian: Search notes' })
 
     vim.keymap.set('n', '<leader>no', function()
       vim.cmd 'ObsidianOpen'
-    end, { desc = 'Open in Obsidian' })
-
-    vim.keymap.set('n', '<leader>nd', function()
-      vim.cmd 'ObsidianToday'
-    end, { desc = "Today's note" })
-
-    vim.keymap.set('n', '<leader>nw', function()
-      vim.cmd 'ObsidianWorkspace'
-    end, { desc = 'Switch workspace' })
-
-    vim.keymap.set('n', '<leader>tt', function()
-      vim.cmd 'ObsidianToggleCheckbox'
-    end, { desc = 'Toggle checkbox' })
+    end, { desc = 'obsidian: Open in Obsidian' })
 
     vim.keymap.set('n', '<leader>nc', function()
       local ft = vim.bo.filetype
       vim.api.nvim_put({ '```' .. ft, '', '```' }, 'c', true, true)
       vim.cmd 'normal! kO'
-    end, { desc = 'Insert code block' })
-
-    vim.keymap.set('n', '<leader>nm', function()
-      vim.api.nvim_put({ '```mermaid', 'graph TD', '    A --> B', '```' }, 'c', true, true)
-    end, { desc = 'Insert mermaid diagram' })
-
-    vim.keymap.set('n', '<leader>nlg', function()
-      vim.cmd('ObsidianTemplate ' .. vim.fn.expand '~/Documents/Second_Brain/Templates/learning.template.md')
-    end, { desc = 'Insert learning template' })
-
-    vim.keymap.set('n', '<leader>nsg', function()
-      vim.cmd('ObsidianTemplate ' .. vim.fn.expand '~/Documents/Second_Brain/Templates/snippet.template.md')
-    end, { desc = 'Insert snippet template' })
-
-    vim.keymap.set('n', '<leader>nlr', function()
-      local resource_label = 'Resource ' .. os.date '%Y-%m'
-      vim.cmd('normal! a[[' .. resource_label .. ']]')
-    end, { desc = 'Insert resource link' })
-
-    vim.keymap.set('n', '<leader>nfs', function()
-      vim.cmd 'ObsidianSearch #snippet'
-    end, { desc = 'Search snippets' })
+    end, { desc = 'obsidian: Insert code block' })
 
     vim.defer_fn(function()
       vim.cmd 'ObsidianWorkspace Second_Brain'
