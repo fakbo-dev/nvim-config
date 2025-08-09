@@ -1,4 +1,3 @@
--- NOTE: this is important to see
 return {
   'lewis6991/gitsigns.nvim',
   opts = {

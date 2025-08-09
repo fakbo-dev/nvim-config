@@ -78,7 +78,6 @@ return {
       end,
       dashboard = 'Home',
     },
-    --buttons = nil,
     buttons = {
       {
         label = 'View Repository',

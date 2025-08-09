@@ -21,7 +21,6 @@ return {
   config = function()
     require('telescope').setup {
       defaults = {
-        -- NOTE: this is really useful!
         mappings = {
           i = {
             ['<C-k>'] = require('telescope.actions').move_selection_previous,
@@ -50,7 +49,7 @@ return {
     vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
     vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
     vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
-
+    vim.keymap.set('n', '<leader>gc', builtin.git_commits, {desc = '[G]it [C]ommits'})
     vim.keymap.set('n', '<leader>/', function()
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
         winblend = 10,
