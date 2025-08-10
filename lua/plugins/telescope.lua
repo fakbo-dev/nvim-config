@@ -49,6 +49,7 @@ return {
     vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
     vim.keymap.set('n', '<leader>gc', builtin.git_commits, {desc = '[G]it [C]ommits'})
     vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {desc = '[C]color[S]cheme'})
+    vim.keymap.set('n', '<leader><leader>', builtin.buffers, {desc = '[C]current [B]uffer'})
     vim.keymap.set('n', '<leader>/', function()
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
         winblend = 10,
