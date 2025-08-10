@@ -39,8 +39,6 @@ return {
         },
       },
     }
-    -- TODO: adding and see all the builtin a can use (implement the telesope)
-    -- for git files
     local builtin = require 'telescope.builtin'
     vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
     vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
@@ -50,6 +48,7 @@ return {
     vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
     vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
     vim.keymap.set('n', '<leader>gc', builtin.git_commits, {desc = '[G]it [C]ommits'})
+    vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {desc = '[C]color[S]cheme'})
     vim.keymap.set('n', '<leader>/', function()
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
         winblend = 10,
