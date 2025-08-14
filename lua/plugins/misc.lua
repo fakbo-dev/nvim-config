@@ -26,7 +26,7 @@ return {
     NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
     TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
     colors = {
-        error = { "DiagnosticError", "ErrorMsg", "#DC2626" },
+        error = {  "#DC2626" },
         warning = {"#FBBF24" },
         WARN = {"#FFA500"},
         info = {"#2563EB" },
