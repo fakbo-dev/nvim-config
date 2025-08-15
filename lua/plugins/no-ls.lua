@@ -16,6 +16,7 @@ return {
         'eslint_d',
         'shfmt',
         'ruff',
+        'sql-formatter',
       },
       automatic_installation = true,
     }
