@@ -43,4 +43,9 @@ return {
       require('colorizer').setup()
     end,
   },
+  {
+    "webhooked/kanso.nvim",
+    lazy = false,
+    priority = 1000,
+  }
 }
