@@ -39,13 +39,14 @@ require('lazy').setup({
   require 'plugins.leetcode',
   require 'plugins.ts-autotag',
   require 'plugins.vague',
-  require 'plugins.feline',
+  -- require 'plugins.feline',
   require 'plugins.newstart',
   require 'plugins.oil',
   require 'plugins.lazygit',
   require 'plugins.trouble',
   -- require 'plugins.theme',
   -- require 'plugins.colorcolumn'
+  require 'plugins.lualine'
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
