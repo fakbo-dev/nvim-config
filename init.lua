@@ -25,7 +25,6 @@ require('lazy').setup({
   require 'plugins.telescope',
   require 'plugins.lsp',
   require 'plugins.autocompletion',
-  --require 'plugins.completion',
   require 'plugins.no-ls',
   require 'plugins.gitsigns',
   require 'plugins.indent-blankline',
@@ -33,7 +32,6 @@ require('lazy').setup({
   require 'plugins.mason-tempo',
   require 'plugins.presence-vyfor',
   require 'plugins.obsidian',
-  --require 'plugins.nvim-cpm',
   require 'plugins.vim-be-good',
   require 'plugins.harpoon',
   require 'plugins.leetcode',
@@ -44,8 +42,6 @@ require('lazy').setup({
   require 'plugins.oil',
   require 'plugins.lazygit',
   require 'plugins.trouble',
-  -- require 'plugins.theme',
-  -- require 'plugins.colorcolumn'
   require 'plugins.lualine',
   require 'plugins.floating'
 }, {
