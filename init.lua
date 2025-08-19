@@ -46,7 +46,8 @@ require('lazy').setup({
   require 'plugins.trouble',
   -- require 'plugins.theme',
   -- require 'plugins.colorcolumn'
-  require 'plugins.lualine'
+  require 'plugins.lualine',
+  require 'plugins.floating'
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
