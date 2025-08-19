@@ -3,7 +3,6 @@
 
 -- ~  Init
 
-local has_kanagawa, kanagawa = pcall(require, "kanagawa")
 local theme
 local palette
     -- ~  NOTE!
@@ -103,14 +102,6 @@ local config = {
         lualine_y = {},
         lualine_z = {}
     },
-    tabline = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = {},
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = {}
-    }
 }
 
 local status_c = function (component) table.insert(config.sections.lualine_c, component) end
