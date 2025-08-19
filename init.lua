@@ -38,7 +38,7 @@ require('lazy').setup({
   require 'plugins.harpoon',
   require 'plugins.leetcode',
   require 'plugins.ts-autotag',
-  -- require 'plugins.vague',
+  require 'plugins.vague',
   require 'plugins.feline',
   require 'plugins.newstart',
   require 'plugins.oil',
