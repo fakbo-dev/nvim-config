@@ -18,7 +18,7 @@ local static = {}
 -- ~  Helpers
 
 local custom_icons = {
-    mode = "",
+    mode = "",
     git_branch = "",
     error = " ",
     warn = " ",
