@@ -47,6 +47,7 @@ return {
     vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
     vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
     vim.keymap.set('n', '<leader><leader>', builtin.buffers, {desc = '[C]current [B]uffer'})
+    vim.keymap.set('n', '<leader>cc', builtin.git_files, {desc = 'telescope git files'})
     vim.keymap.set('n', '<leader>/', function()
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
         winblend = 10,
