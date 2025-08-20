@@ -17,6 +17,7 @@ return {
         path = vim.fn.expand '~/Documents/Second_Brain',
       },
     },
+    mappings = {},
     disable_frontmatter = true,
     note_id_func = function(title)
       if title ~= nil then

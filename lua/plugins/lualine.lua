@@ -6,7 +6,5 @@ return {
     },
     opts = function ()
         return require("minim")
-        -- Or alternatively, different path to where you saved the 'minim' file, for example:
-        -- return require("plugins.lualine.minim")
     end
 }
