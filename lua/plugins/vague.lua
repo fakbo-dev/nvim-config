@@ -4,7 +4,7 @@ return {
     require('vague').setup {
       transparent = true,
       bold = true,
-      italic = true,
+      italic = false,
       style = {
         boolean = 'bold',
         number = 'none',
@@ -56,7 +56,7 @@ return {
       on_highlights = function(highlights, colors) end,
 
       colors = {
-        bg = '#141415',
+        bg = '#080808',
         fg = '#cdcdcd',
         floatBorder = '#878787',
         line = '#252530',
