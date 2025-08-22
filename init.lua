@@ -43,7 +43,7 @@ require('lazy').setup({
   require 'plugins.lazygit',
   require 'plugins.trouble',
   require 'plugins.lualine',
-  require 'plugins.floating'
+  require 'plugins.floating',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
