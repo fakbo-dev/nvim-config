@@ -42,3 +42,5 @@ vim.keymap.set('v', 'p', '"_dP', opts)
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>e', ':Oil<CR>')
+-- NOTE: this might broke something
+vim.keymap.set('i', '<C-j>', '')
