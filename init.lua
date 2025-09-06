@@ -41,7 +41,6 @@ require('lazy').setup({
   require 'plugins.lazygit',
   require 'plugins.lualine',
   require 'plugins.floating',
-  require 'plugins.dap',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
