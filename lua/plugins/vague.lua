@@ -81,6 +81,6 @@ return {
       },
     }
 
-    -- vim.cmd.colorscheme 'vague'
+    vim.cmd.colorscheme 'vague'
   end,
 }

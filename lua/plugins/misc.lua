@@ -76,7 +76,7 @@ return {
 })
 
 -- setup must be called before loading
-vim.cmd("colorscheme kanso")
+-- vim.cmd("colorscheme kanso")
     end
   }
 }
