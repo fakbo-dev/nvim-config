@@ -5,9 +5,10 @@ return {
   {
     'tpope/vim-sleuth',
   },
-  -- {
-  --   'tpope/vim-rhubarb',
-  -- },
+  {
+    'tpope/vim-rhubarb',
+    dependencies = {'tpope/vim-fugitive'},
+  },
   -- {
   --   'windwp/nvim-autopairs',
   --   event = 'InsertEnter',
