@@ -39,7 +39,8 @@ require('lazy').setup({
   require 'plugins.lualine',
   require 'plugins.rosePine',
   require 'plugins.printer',
-  require 'plugins.hardtime'
+  require 'plugins.hardtime',
+  require 'plugins.devdocs'
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
