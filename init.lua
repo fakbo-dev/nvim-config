@@ -30,7 +30,6 @@ require('lazy').setup({
   require 'plugins.indent-blankline',
   require 'plugins.misc',
   require 'plugins.mason-tempo',
-  require 'plugins.presence-vyfor',
   require 'plugins.obsidian',
   require 'plugins.harpoon',
   require 'plugins.leetcode',
