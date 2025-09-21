@@ -36,9 +36,7 @@ require('lazy').setup({
   require 'plugins.ts-autotag',
   require 'plugins.newstart',
   require 'plugins.oil',
-  require 'plugins.lazygit',
   require 'plugins.lualine',
-  require 'plugins.floating',
   require 'plugins.rosePine',
   require 'plugins.printer',
   require 'plugins.hardtime'
