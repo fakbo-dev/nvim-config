@@ -38,4 +38,8 @@ return {
       require('colorizer').setup()
     end,
   },
+  {
+    "ecthelionvi/NeoColumn.nvim",
+    opts = {always_on = true},
+  },
 }
