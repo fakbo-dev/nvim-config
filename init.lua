@@ -41,7 +41,8 @@ require('lazy').setup({
   require 'plugins.printer',
   require 'plugins.hardtime',
   require 'plugins.devdocs',
-  require 'plugins.markview'
+  require 'plugins.markview',
+  require 'plugins.csvview'
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
