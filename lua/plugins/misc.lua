@@ -42,4 +42,19 @@ return {
     "ecthelionvi/NeoColumn.nvim",
     opts = {always_on = true},
   },
-}
+  {
+    "ahkohd/buffer-sticks.nvim",
+    event = "VeryLazy",
+    config = function()
+      local sticks = require("buffer-sticks")
+      sticks.setup({
+        filter = { buftypes = { "terminal" } },
+        highlights = {
+          active = { link = "Statement" },
+          inactive = { link = "Whitespace" },
+          label = { link = "Comment" },
+        },
+      })
+      sticks.show()
+    end,
+}}
