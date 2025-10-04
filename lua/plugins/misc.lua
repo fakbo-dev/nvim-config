@@ -57,4 +57,5 @@ return {
       })
       sticks.show()
     end,
-}}
+  },
+}

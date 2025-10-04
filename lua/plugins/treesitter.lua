@@ -38,7 +38,6 @@ return {
       enable = true,
       additional_vim_regex_highlighting = { 'ruby' },
     },
-    -- NOTE: i change enable to false for try my new indentation method
     indent = { enable = false, disable = { 'ruby' } },
   },
 }
