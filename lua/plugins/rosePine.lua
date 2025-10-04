@@ -53,17 +53,9 @@ return
         },
 
         palette = {
-            -- moon = {
-            --     base = '#18191a',
-            --     overlay = '#363738',
-            -- },
         },
 
         highlight_groups = {
-            -- Comment = { fg = "foam" },
-            -- StatusLine = { fg = "love", bg = "love", blend = 15 },
-            -- VertSplit = { fg = "muted", bg = "muted" },
-            -- Visual = { fg = "base", bg = "text", inherit = false },
         },
     })
 
