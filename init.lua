@@ -42,7 +42,7 @@ require('lazy').setup({
   require 'plugins.devdocs',
   require 'plugins.markview',
   require 'plugins.csvview',
-  require 'plugins.umbrella'
+  require 'plugins.lackluster'
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {

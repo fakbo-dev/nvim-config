@@ -14,10 +14,12 @@ return {
             },
             tweak_highlight = {
                 ["@keyword"] = {
+                    overwrite = true,
                     bold = true,
                     italic = false,
                 },
                 ["@function"] = {
+                    overwrite = true,
                     link = "@keyword",
                 },
             },
