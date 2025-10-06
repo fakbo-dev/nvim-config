@@ -58,4 +58,36 @@ return {
       sticks.show()
     end,
   },
+  {
+    'tronikelis/ts-autotag.nvim',
+    opts = {},
+    event = 'VeryLazy',
+  },
+  {
+    'rareitems/printer.nvim',
+    config = function()
+      require('printer').setup({
+        keymap = "gp",
+
+        add_to_inside = function(text)
+          return text
+        end
+      })
+    end
+  },
+  {
+    "m4xshen/hardtime.nvim",
+    lazy = false,
+    dependencies = { "MunifTanjim/nui.nvim" },
+    opts = {},
+  },
+  {
+    "luckasRanarison/nvim-devdocs",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {}
+  }
 }

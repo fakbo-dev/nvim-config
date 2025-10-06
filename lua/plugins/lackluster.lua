@@ -1,4 +1,5 @@
 return {
+    -- testing
     "slugbyte/lackluster.nvim",
     lazy = false,
     priority = 1000,
@@ -6,22 +7,15 @@ return {
     config = function()
 
         require('lackluster').setup({
-
             tweak_background=
             {
                 normal = 'none',
-                telescope = 'none'
+                telescope = 'none',
             },
-            tweak_highlight = {
-                ["@keyword"] = {
-                    overwrite = true,
-                    bold = true,
-                    italic = false,
-                },
-                ["@function"] = {
-                    overwrite = true,
-                    link = "@keyword",
-                },
+            tweak_syntax =
+            {
+                string = '#925757',
+                comment = "#708090"
             },
         })
         vim.cmd.colorscheme('lackluster-hack')
