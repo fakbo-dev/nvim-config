@@ -36,12 +36,13 @@ require('lazy').setup({
   require 'plugins.ts-autotag',
   require 'plugins.oil',
   require 'plugins.lualine',
-  require 'plugins.rosePine',
+  -- require 'plugins.rosePine',
   require 'plugins.printer',
   require 'plugins.hardtime',
   require 'plugins.devdocs',
   require 'plugins.markview',
-  require 'plugins.csvview'
+  require 'plugins.csvview',
+  require 'plugins.umbrella'
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
