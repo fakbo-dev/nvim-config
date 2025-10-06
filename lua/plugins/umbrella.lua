@@ -9,8 +9,18 @@ return {
 
             tweak_background=
             {
-                normal = 'none'
-            }
+                normal = 'none',
+                telescope = 'none'
+            },
+            tweak_highlight = {
+                ["@keyword"] = {
+                    bold = true,
+                    italic = false,
+                },
+                ["@function"] = {
+                    link = "@keyword",
+                },
+            },
         })
         vim.cmd.colorscheme('lackluster-hack')
     end
