@@ -21,12 +21,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  require 'plugins.treesitter', -- dont touch
-  require 'plugins.telescope', -- dont touch
-  require 'plugins.lsp', -- dont touch
-  require 'plugins.autocompletion', -- dont touch
-  require 'plugins.no-ls', -- dont touch
-  require 'plugins.gitsigns', -- dont touch
+  require 'plugins.treesitter',
+  require 'plugins.telescope',
+  require 'plugins.lsp',
+  require 'plugins.autocompletion',
+  require 'plugins.no-ls',
+  require 'plugins.gitsigns',
   require 'plugins.indent-blankline',
   require 'plugins.misc',
   require 'plugins.mason-tempo',
