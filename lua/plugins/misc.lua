@@ -40,7 +40,7 @@ return {
   },
   {
     "ecthelionvi/NeoColumn.nvim",
-    opts = {always_on = true, bg_color = '#FFFFFF', fg_color = '#000000'},
+    opts = {always_on = true, bg_color = '#808080', fg_color = '#ffffff'},
   },
   {
     "ahkohd/buffer-sticks.nvim",
