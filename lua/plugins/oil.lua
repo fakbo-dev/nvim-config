@@ -8,7 +8,6 @@ return {
       'permissions',
       'size',
       'mtime',
-      'icon',
     },
     keymaps =
     {
