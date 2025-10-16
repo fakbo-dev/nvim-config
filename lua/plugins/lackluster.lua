@@ -14,7 +14,7 @@ return {
             },
             tweak_syntax =
             {
-                string = '#925757',
+                string = '#988069',
                 comment = '#999DA0'
             },
             disable_plugin =
