@@ -1,6 +1,6 @@
 return {
     -- testing
-    "slugbyte/lackluster.nvim",
+    'slugbyte/lackluster.nvim',
     lazy = false,
     priority = 1000,
 
@@ -15,7 +15,7 @@ return {
             tweak_syntax =
             {
                 string = '#925757',
-                comment = "#708090"
+                comment = '#999DA0'
             },
             disable_plugin =
             {
