@@ -89,5 +89,9 @@ return {
       "nvim-treesitter/nvim-treesitter",
     },
     opts = {}
+  },
+  {
+    "sphamba/smear-cursor.nvim",
+    opts = {},
   }
 }
