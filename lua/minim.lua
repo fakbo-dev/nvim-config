@@ -190,6 +190,8 @@ status_x({
 })
 
 status_x({ "branch", icon = custom_icons.git_branch, color = { fg = palette.dragonViolet } })
+status_x({"encoding", color = {fg = palette.dragonYellow}, padding = {left = 1, right = 1}})
+status_x({"location", color = {fg = palette.dragonGreen}, padding = {left = 1, right = 1}})
 status_x({ function() return " |" end, color = { fg = palette.dragonWhite }, padding = { right = 0 } })
 
 -- ~  --------------------------------------------------------------------------------  ~ --
