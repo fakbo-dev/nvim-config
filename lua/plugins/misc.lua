@@ -92,6 +92,7 @@ return {
   },
   {
     "sphamba/smear-cursor.nvim",
+    enabled = function() return jit.os == "Linux" end,
     opts =
     {
       stiffness = 0.8,
