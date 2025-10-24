@@ -12,10 +12,8 @@ vim.wo.signcolumn = "yes:1"
 vim.o.cursorline = false
 vim.o.scrolloff = 10
 vim.o.sidescrolloff = 8
--- vim.api.nvim_create_autocmd("BufEnter", {
---   pattern = "*",
---   command = "setlocal colorcolumn=80",
--- })
+vim.opt.colorcolumn = "80"
+vim.api.nvim_set_hl(0, "Colorcolumn", {ctermbg='red',bg='red'})
 vim.o.splitright = true
 
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
