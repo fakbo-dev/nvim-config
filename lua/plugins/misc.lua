@@ -90,11 +90,11 @@ return {
     },
     opts = {}
   },
-  {
-    "sphamba/smear-cursor.nvim",
-    enabled = function() return jit.os == "Linux" end,
-    opts =
-    {
-    },
-  }
+  -- {
+  --   "sphamba/smear-cursor.nvim",
+  --   enabled = function() return jit.os == "Linux" end,
+  --   opts =
+  --   {
+  --   },
+  -- }
 }
