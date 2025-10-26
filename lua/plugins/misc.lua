@@ -43,44 +43,10 @@ return {
     opts = {always_on = true, bg_color = '#808080', fg_color = '#ffffff'},
   },
   {
-    "ahkohd/buffer-sticks.nvim",
-    event = "VeryLazy",
-    config = function()
-      local sticks = require("buffer-sticks")
-      sticks.setup({
-        filter = { buftypes = { "terminal" } },
-        highlights = {
-          active = { link = "Statement" },
-          inactive = { link = "Whitespace" },
-          label = { link = "Comment" },
-        },
-      })
-      sticks.show()
-    end,
-  },
-  {
     'tronikelis/ts-autotag.nvim',
     opts = {},
     event = 'VeryLazy',
   },
-  {
-    'rareitems/printer.nvim',
-    config = function()
-      require('printer').setup({
-        keymap = "gp",
-
-        add_to_inside = function(text)
-          return text
-        end
-      })
-    end
-  },
-  -- {
-  --   "m4xshen/hardtime.nvim",
-  --   lazy = false,
-  --   dependencies = { "MunifTanjim/nui.nvim" },
-  --   opts = {},
-  -- },
   {
     "luckasRanarison/nvim-devdocs",
     dependencies = {
@@ -90,11 +56,4 @@ return {
     },
     opts = {}
   },
-  -- {
-  --   "sphamba/smear-cursor.nvim",
-  --   enabled = function() return jit.os == "Linux" end,
-  --   opts =
-  --   {
-  --   },
-  -- }
 }
