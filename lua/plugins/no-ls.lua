@@ -23,6 +23,7 @@ return {
         terraform = { 'terraform_fmt' },
         python = { 'ruff_format', 'ruff_organize_imports' },
         -- lua = { 'stylua' },
+        sql = {'sql_formatter'},
       },
       
       formatters = {
