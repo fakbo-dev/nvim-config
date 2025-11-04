@@ -13,7 +13,7 @@ vim.o.cursorline = false
 vim.o.scrolloff = 10
 vim.o.sidescrolloff = 8
 vim.opt.colorcolumn = "80"
-vim.api.nvim_set_hl(0, "Colorcolumn", {ctermbg='red',bg='red'})
+vim.api.nvim_set_hl(0, "Colorcolumn", { ctermbg = "red", bg = "red" })
 vim.o.splitright = true
 
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

@@ -22,7 +22,7 @@ return {
         bash = { 'shfmt' },
         terraform = { 'terraform_fmt' },
         python = { 'ruff_format', 'ruff_organize_imports' },
-        lua = { 'stylua' },
+        -- lua = { 'stylua' },
       },
       
       formatters = {
