@@ -43,7 +43,7 @@ return {
                 tree = false,
                 trouble = false,
                 which_key = false,
-                yanky = false,
+                yanky = true,
             },
         })
         vim.cmd.colorscheme('lackluster-hack')
