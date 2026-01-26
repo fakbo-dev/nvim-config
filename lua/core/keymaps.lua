@@ -43,3 +43,6 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<leader>e", ":Oil<CR>")
 -- NOTE: this might broke something
 vim.keymap.set("i", "<C-j>", "")
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank to system clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste after from system clipboard" })
+vim.keymap.set({ "n", "v" }, "<leader>P", '"+P', { desc = "Paste before from system clipboard" })
