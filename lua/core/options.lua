@@ -21,9 +21,6 @@ vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
 vim.api.nvim_set_hl(0, "Pmenu", { bg = "none" })
 vim.opt.termguicolors = true
 
--- vim.schedule(function()
--- 	vim.opt.clipboard = "unnamedplus"
--- end)
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 vim.opt.list = true
