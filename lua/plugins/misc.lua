@@ -91,4 +91,9 @@ return {
 			-- vim.cmd.colorscheme("zen")
 		end,
 	},
+	{
+		"gisketch/triforce.nvim",
+		dependencies = { "nvzone/volt" },
+		opts = {},
+	},
 }
