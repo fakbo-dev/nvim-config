@@ -1,11 +1,5 @@
 return {
 	{
-		"christoomey/vim-tmux-navigator",
-	},
-	{
-		"tpope/vim-sleuth",
-	},
-	{
 		"tpope/vim-rhubarb",
 		dependencies = { "tpope/vim-fugitive" },
 	},
@@ -60,36 +54,6 @@ return {
 		lazy = false,
 		dependencies = { "MunifTanjim/nui.nvim" },
 		opts = {},
-	},
-	{
-		"nendix/zen.nvim",
-		lazy = false,
-		priority = 1000,
-
-		config = function()
-			require("zen").setup({
-				variant = "dark",
-				undercurl = true,
-				transparent = true,
-				dimInactive = false,
-				terminalColors = true,
-				commentStyle = { italic = true },
-				functionStyle = {},
-				keywordStyle = { italic = true },
-				statementStyle = {},
-				typeStyle = {},
-				compile = false,
-				colors = {
-					palette = {}, -- override palette colors
-					theme = {}, -- override theme colors
-				},
-				overrides = function(colors)
-					return {}
-				end,
-			})
-
-			-- vim.cmd.colorscheme("zen")
-		end,
 	},
 	{
 		"gisketch/triforce.nvim",

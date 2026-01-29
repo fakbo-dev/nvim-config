@@ -31,12 +31,9 @@ require("lazy").setup({
 	require("plugins.mason-tempo"),
 	require("plugins.obsidian"),
 	require("plugins.harpoon"),
-	require("plugins.leetcode"),
 	require("plugins.oil"),
 	require("plugins.lualine"),
-	require("plugins.rosePine"),
 	require("plugins.markview"),
-	require("plugins.csvview"),
 	require("plugins.lackluster"),
 }, {
 	ui = {
