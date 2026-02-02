@@ -42,6 +42,6 @@ return {
 				yanky = true,
 			},
 		})
-		vim.cmd.colorscheme("lackluster-hack")
+		-- vim.cmd.colorscheme("lackluster-hack")
 	end,
 }

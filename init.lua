@@ -35,6 +35,7 @@ require("lazy").setup({
 	require("plugins.lualine"),
 	require("plugins.markview"),
 	require("plugins.lackluster"),
+	require("plugins.colorscheme"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
