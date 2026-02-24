@@ -6,6 +6,8 @@ return {
 		require("gruvbox").setup({
 			styles = {
 				transparency = true,
+				bold = false,
+				italic = false,
 			},
 		})
 		vim.cmd("colorscheme gruvbox")
