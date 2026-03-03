@@ -6,6 +6,7 @@ return {
 	opts = {},
 	config = function()
 		require("render-markdown").setup({
+			restar_highlighter = true,
 			code = {
 				disable_background = true,
 			},
