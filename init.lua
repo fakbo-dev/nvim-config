@@ -34,7 +34,6 @@ require("lazy").setup({
 	require("plugins.oil"),
 	require("plugins.lualine"),
 	require("plugins.markview"),
-	require("plugins.lackluster"),
 	require("plugins.colorscheme"),
 }, {
 	ui = {

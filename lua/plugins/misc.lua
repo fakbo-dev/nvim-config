@@ -60,4 +60,5 @@ return {
 		dependencies = { "nvzone/volt" },
 		opts = {},
 	},
+	{ "aymenhafeez/doric-themes.nvim", priority = 1000 },
 }
