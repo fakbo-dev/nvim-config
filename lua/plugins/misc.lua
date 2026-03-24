@@ -61,4 +61,12 @@ return {
 		opts = {},
 	},
 	{ "aymenhafeez/doric-themes.nvim", priority = 1000 },
+	{
+		"kungfusheep/mfd.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			-- vim.cmd("colorscheme mfd-flir-rh")
+		end,
+	},
 }
