@@ -6,8 +6,8 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-				javascript = { "clang-format" },
-				typescript = { "clang-format" },
+				javascript = { "prettier" },
+				typescript = { "prettier" },
 				javascriptreact = { "prettier" },
 				typescriptreact = { "prettier" },
 				c = { "clang-format" },
