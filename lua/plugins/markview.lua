@@ -8,7 +8,7 @@ return {
 		require("render-markdown").setup({
 			restar_highlighter = true,
 			code = {
-				disable_background = true,
+				disable_background = false,
 			},
 			heading = {
 				-- width = 'block'
