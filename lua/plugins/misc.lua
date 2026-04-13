@@ -60,13 +60,15 @@ return {
 		dependencies = { "nvzone/volt" },
 		opts = {},
 	},
-	{ "aymenhafeez/doric-themes.nvim", priority = 1000 },
 	{
-		"kungfusheep/mfd.nvim",
+		"ficcdaf/ashen.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd("colorscheme mfd-flir-rh")
+			require("ashen").setup({
+				transparent = true,
+			})
+			vim.cmd("colorscheme ashen")
 		end,
 	},
 }
