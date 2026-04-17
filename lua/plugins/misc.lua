@@ -41,15 +41,6 @@ return {
 		event = "VeryLazy",
 	},
 	{
-		"luckasRanarison/nvim-devdocs",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-telescope/telescope.nvim",
-			"nvim-treesitter/nvim-treesitter",
-		},
-		opts = {},
-	},
-	{
 		"m4xshen/hardtime.nvim",
 		lazy = false,
 		dependencies = { "MunifTanjim/nui.nvim" },
