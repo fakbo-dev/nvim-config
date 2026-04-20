@@ -59,7 +59,7 @@ return {
 			require("ashen").setup({
 				transparent = true,
 			})
-			vim.cmd("colorscheme ashen")
+			-- vim.cmd("colorscheme ashen")
 		end,
 	},
 }
