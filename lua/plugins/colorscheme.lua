@@ -21,6 +21,6 @@ return {
 				end
 			end,
 		})
-		vim.cmd("colorscheme gruvbox")
+		-- vim.cmd("colorscheme gruvbox")
 	end,
 }
