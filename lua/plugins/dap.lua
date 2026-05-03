@@ -1,12 +1,19 @@
 return {
 	"mfussenegger/nvim-dap",
 	dependencies = {
-		"rcarriga/nvim-dap-ui",
-		"nvim-neotest/nvim-nio",
+		{
+			"igorlfs/nvim-dap-view",
+			opts = {
+				windows = {
+					position = "below",
+					size = 0.35, -- 35% del ancho total
+				},
+			},
+		},
 	},
 	config = function()
 		local dap = require("dap")
-		local dapui = require("dapui")
+		local dapview = require("dap-view")
 
 		dap.adapters["pwa-node"] = {
 			type = "server",
@@ -44,16 +51,14 @@ return {
 			}
 		end
 
-		dapui.setup()
-
-		dap.listeners.after.event_initialized["dapui_config"] = function()
-			dapui.open()
+		dap.listeners.after.event_initialized["dapview_config"] = function()
+			dapview.open()
 		end
-		dap.listeners.before.event_terminated["dapui_config"] = function()
-			dapui.close()
+		dap.listeners.before.event_terminated["dapview_config"] = function()
+			dapview.close()
 		end
-		dap.listeners.before.event_exited["dapui_config"] = function()
-			dapui.close()
+		dap.listeners.before.event_exited["dapview_config"] = function()
+			dapview.close()
 		end
 
 		vim.keymap.set("n", "<F5>", dap.continue, { desc = "DAP continue" })
@@ -61,7 +66,8 @@ return {
 		vim.keymap.set("n", "<F10>", dap.step_over, { desc = "DAP step over" })
 		vim.keymap.set("n", "<F11>", dap.step_into, { desc = "DAP step into" })
 		vim.keymap.set("n", "<F12>", dap.step_out, { desc = "DAP step out" })
-		vim.keymap.set("n", "<leader>du", dapui.toggle, { desc = "DAP UI toggle" })
+		vim.keymap.set("n", "<leader>dv", dapview.toggle, { desc = "DAP view toggle" })
+		vim.keymap.set("n", "<leader>dw", "<cmd>DapViewWatch<cr>", { desc = "DAP watch expression" })
 		vim.keymap.set("n", "<leader>dr", dap.repl.toggle, { desc = "DAP REPL" })
 	end,
 }

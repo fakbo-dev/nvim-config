@@ -27,9 +27,6 @@ return {
 			},
 
 			formatters = {
-				["clang-format"] = {
-					prepend_args = { "--style={BasedOnStyle: LLVM, BreakBeforeBraces: Allman}" },
-				},
 				shfmt = {
 					prepend_args = { "-i", "4" },
 				},

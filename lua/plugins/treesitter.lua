@@ -39,6 +39,8 @@ return {
 			"css",
 			"html",
 			"rust",
+			"kotlin",
+			"cpp",
 		}
 		local alreadyInstalled = require("nvim-treesitter.config").get_installed()
 		local parsersToInstall = vim.iter(ensureInstalled)

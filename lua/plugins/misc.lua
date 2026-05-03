@@ -40,12 +40,12 @@ return {
 		opts = {},
 		event = "VeryLazy",
 	},
-	{
-		"m4xshen/hardtime.nvim",
-		lazy = false,
-		dependencies = { "MunifTanjim/nui.nvim" },
-		opts = {},
-	},
+	-- {
+	-- 	"m4xshen/hardtime.nvim",
+	-- 	lazy = false,
+	-- 	dependencies = { "MunifTanjim/nui.nvim" },
+	-- 	opts = {},
+	-- },
 	{
 		"gisketch/triforce.nvim",
 		dependencies = { "nvzone/volt" },
