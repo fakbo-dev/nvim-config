@@ -34,7 +34,8 @@ return {
 				{
 					type = "pwa-node",
 					request = "launch",
-					name = "Launch current file",
+					name = "Launch TS file (tsx)",
+					runtimeExecutable = "tsx",
 					program = "${file}",
 					cwd = "${workspaceFolder}",
 					sourceMaps = true,

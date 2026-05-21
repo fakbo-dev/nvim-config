@@ -30,11 +30,6 @@ return {
 			folder = "Templates",
 			date_format = "%Y-%m-%d",
 			time_format = "%H:%M:%S",
-			aliases = {
-				programming = "prog.template.md",
-				learning = "learning.template.md",
-				snippet = "snippet.template.md",
-			},
 		},
 		ui = {
 			enable = false,
