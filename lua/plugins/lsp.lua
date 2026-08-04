@@ -113,7 +113,11 @@ return {
 				},
 			},
 			dockerls = {},
-			sqlls = {},
+			sqlls = {
+				filetypes = {
+					"sql",
+				},
+			},
 			--terraformls = {},
 			jsonls = {},
 			yamlls = {},

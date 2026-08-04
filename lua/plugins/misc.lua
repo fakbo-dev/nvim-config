@@ -59,7 +59,22 @@ return {
 			require("ashen").setup({
 				transparent = true,
 			})
-			vim.cmd("colorscheme ashen")
+			-- vim.cmd("colorscheme ashen")
+		end,
+	},
+	{
+		"Aejkatappaja/cendre",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("cendre").setup({
+				background = "hard", -- "hard" | "medium" | "soft"
+				italic_virtual_text = false,
+				transparent = true,
+			})
+			vim.cmd("colorscheme cendre")
+			vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#080808" })
+			vim.api.nvim_set_hl(0, "RenderMarkdownCode", { bg = "#080808" })
 		end,
 	},
 }
