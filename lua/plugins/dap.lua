@@ -6,7 +6,7 @@ return {
 			opts = {
 				windows = {
 					position = "below",
-					size = 0.35, -- 35% del ancho total
+					size = 0.35,
 				},
 			},
 		},
