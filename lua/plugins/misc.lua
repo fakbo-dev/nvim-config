@@ -47,11 +47,6 @@ return {
 	-- 	opts = {},
 	-- },
 	{
-		"gisketch/triforce.nvim",
-		dependencies = { "nvzone/volt" },
-		opts = {},
-	},
-	{
 		"ficcdaf/ashen.nvim",
 		lazy = false,
 		priority = 1000,
