@@ -1,10 +1,9 @@
 return {
-    "nvim-lualine/lualine.nvim",
-    dependencies = {
-        "nvim-tree/nvim-web-devicons",
-        "rebelot/kanagawa.nvim"
-    },
-    opts = function ()
-        return require("minim")
-    end
+	"nvim-lualine/lualine.nvim",
+	dependencies = {
+		"nvim-tree/nvim-web-devicons",
+	},
+	opts = function()
+		return require("minim")
+	end,
 }

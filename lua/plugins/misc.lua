@@ -1,7 +1,12 @@
 return {
 	{
+		"tpope/vim-fugitive",
+		cmd = { "Git", "G" },
+	},
+	{
 		"tpope/vim-rhubarb",
 		dependencies = { "tpope/vim-fugitive" },
+		cmd = { "GBrowse" },
 	},
 	{
 		"folke/todo-comments.nvim",
@@ -27,6 +32,7 @@ return {
 	},
 	{
 		"norcalli/nvim-colorizer.lua",
+		event = { "BufReadPost", "BufNewFile" },
 		config = function()
 			require("colorizer").setup()
 		end,

@@ -6,7 +6,6 @@ return {
 		"BufReadPre " .. vim.fn.expand("~") .. "/Documents/Second_Brain/**/*.md",
 		"BufNewFile " .. vim.fn.expand("~") .. "/Documents/Second_Brain/**/*.md",
 	},
-	ft = "markdown",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},

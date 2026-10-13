@@ -1,11 +1,10 @@
 return {
 	"neovim/nvim-lspconfig",
+	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		"hrsh7th/nvim-cmp",
 		"hrsh7th/cmp-nvim-lsp",
-
-		{ "williamboman/mason.nvim", config = true },
-		"williamboman/mason-lspconfig.nvim",
+		{ "mason-org/mason.nvim", version = "1.11.0" },
+		{ "mason-org/mason-lspconfig.nvim", version = "1.32.0" },
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		{ "j-hui/fidget.nvim", opts = {} },
 	},
@@ -151,8 +150,10 @@ return {
 		require("mason").setup()
 
 		local ensure_installed = vim.tbl_keys(servers or {})
-		vim.list_extend(ensure_installed, {
-			"stylua",
+		vim.list_extend(ensure_installed, { "stylua" })
+		require("mason-tool-installer").setup({
+			ensure_installed = ensure_installed,
+			run_on_start = false,
 		})
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 

@@ -48,6 +48,10 @@ return {
 				return not vim.tbl_contains(alreadyInstalled, parser)
 			end)
 			:totable()
-		require("nvim-treesitter").install(parsersToInstall)
+		if #parsersToInstall > 0 then
+			vim.schedule(function()
+				require("nvim-treesitter").install(parsersToInstall)
+			end)
+		end
 	end,
 }

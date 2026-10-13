@@ -1,3 +1,4 @@
+vim.loader.enable()
 require("vim._core.ui2").enable({
 	enable = true,
 	msg = {
@@ -38,14 +39,29 @@ require("lazy").setup({
 	require("plugins.gitsigns"),
 	require("plugins.indent-blankline"),
 	require("plugins.misc"),
-	require("plugins.mason-tempo"),
+	-- require("plugins.mason-tempo"),
 	require("plugins.obsidian"),
 	require("plugins.harpoon"),
 	require("plugins.oil"),
 	require("plugins.lualine"),
 	require("plugins.markview"),
-	require("plugins.colorscheme"),
+	-- require("plugins.colorscheme"),
 	require("plugins.dap"),
+}, {
+	change_detection = { notify = false },
+	performance = {
+
+		rtp = {
+			disabled_plugins = {
+				"gzip",
+				"tarPlugin",
+				"tohtml",
+				"tutor",
+				"zipPlugin",
+				"netrwPlugin",
+			},
+		},
+	},
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
