@@ -19,6 +19,8 @@ local custom_icons = {
 	removed = " ",
 	lock = "",
 	touched = "●",
+	lsp = " ",
+	formatter = " ",
 }
 
 local get_ftype_icon = function()
@@ -196,5 +198,41 @@ status_x({
 	color = { fg = palette.dragonWhite },
 	padding = { right = 0 },
 })
+status_x({
+	function()
+		local clients = vim.lsp.get_clients({ bufnr = 0 })
+		if #clients == 0 then
+			return ""
+		end
+		local names = {}
+		for _, client in ipairs(clients) do
+			table.insert(names, client.name)
+		end
+		return custom_icons.lsp .. table.concat(names, ",")
+	end,
+	cond = condition.is_buf_empty,
+	color = { fg = palette.dragonTeal },
+	padding = { left = 1, right = 1 },
+})
+status_x({
+	function()
+		local ok, conform = pcall(require, "conform")
+		if not ok then
+			return ""
+		end
+		local formatters, lsp_fallback = conform.list_formatters_to_run(0)
+		local names = {}
+		for _, formatter in ipairs(formatters) do
+			table.insert(names, formatter.name)
+		end
 
+		if #names == 0 then
+			return lsp_fallback and (custom_icons.formatter .. "lsp") or ""
+		end
+		return custom_icons.formatter .. table.concat(names, ",")
+	end,
+	cond = condition.is_buf_empty,
+	color = { fg = palette.dragonOrange },
+	padding = { left = 1, right = 1 },
+})
 return config

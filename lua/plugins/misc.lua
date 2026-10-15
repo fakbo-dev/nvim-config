@@ -1,14 +1,5 @@
 return {
 	{
-		"tpope/vim-fugitive",
-		cmd = { "Git", "G" },
-	},
-	{
-		"tpope/vim-rhubarb",
-		dependencies = { "tpope/vim-fugitive" },
-		cmd = { "GBrowse" },
-	},
-	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = {
@@ -46,12 +37,6 @@ return {
 		opts = {},
 		event = "VeryLazy",
 	},
-	-- {
-	-- 	"m4xshen/hardtime.nvim",
-	-- 	lazy = false,
-	-- 	dependencies = { "MunifTanjim/nui.nvim" },
-	-- 	opts = {},
-	-- },
 	{
 		"ficcdaf/ashen.nvim",
 		lazy = false,

@@ -39,13 +39,11 @@ require("lazy").setup({
 	require("plugins.gitsigns"),
 	require("plugins.indent-blankline"),
 	require("plugins.misc"),
-	-- require("plugins.mason-tempo"),
 	require("plugins.obsidian"),
 	require("plugins.harpoon"),
 	require("plugins.oil"),
 	require("plugins.lualine"),
 	require("plugins.markview"),
-	-- require("plugins.colorscheme"),
 	require("plugins.dap"),
 }, {
 	change_detection = { notify = false },
