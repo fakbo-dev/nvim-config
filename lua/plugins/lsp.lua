@@ -75,7 +75,8 @@ return {
 			--gopls = {},
 			pyright = {},
 			rust_analyzer = {},
-			ts_ls = {},
+			vtsls = {},
+			-- ts_ls = {},
 			ruff = {},
 			pylsp = {
 				settings = {

@@ -45,6 +45,7 @@ require("lazy").setup({
 	require("plugins.lualine"),
 	require("plugins.markview"),
 	require("plugins.dap"),
+	require("plugins.devdocs"),
 }, {
 	change_detection = { notify = false },
 	performance = {
