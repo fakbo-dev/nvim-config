@@ -7,12 +7,6 @@ return {
 	cmd = { "DevDocs" },
 	keys = {
 		{
-			"<leader>ho",
-			mode = "n",
-			"<cmd>DevDocs get<cr>",
-			desc = "Get Devdocs",
-		},
-		{
 			"<leader>hi",
 			mode = "n",
 			"<cmd>DevDocs install<cr>",
